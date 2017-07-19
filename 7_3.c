@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-//#pragma warning(disable:4996)
-
+/*
+ *created by Arya HajiTaheri
+ */
 #define EPSILON 0.000001
 #define MAXT  1.509*(24 * 60 * 60)
 
