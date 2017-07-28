@@ -34,7 +34,7 @@ double f3(double, double);
 double r12(double, double, double, double);
 void calculateOrbit(double, double, double, double, double, double, double, double, double, double);
 
-int main() {
+int main(void) {
 	double t = 0.0, dt = 60.0, xn = 0, xn2 = 1.9889*pow(10, 8), yn = 0, yn2 = -1.651*pow(10, 9),
 		vn = 0, v2 = 79348.8, un = 0, u2 = 9078.256;
 	calculateOrbit(t, dt, xn, xn2, yn, yn2, vn, v2, un, u2);
