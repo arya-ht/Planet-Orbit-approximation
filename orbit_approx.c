@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+//#pragma warning(disable:4996)
 /*
  *created by Arya HajiTaheri
  */
@@ -95,7 +96,7 @@ void calculateOrbit(double t, double dt, double xn, double xn2, double yn, doubl
 		u21 = u2 + dt / 6 * (f3(yn, yn2) / r + 2 * f3(ys, ys2) / r1 + 2 * f3(yss, yss2) / r2 + f3(ysss, ysss2) / r3);
 		
 		TOL = fabs(xn1 - xn)*dt;
-		delta = 0.84*(pow(EPSILON / TOL, 0.25));
+		delta = 0.05*(pow(EPSILON / TOL, 0.25));
 
 		if (TOL <= EPSILON) {
 			xn = xn1; vn = vn1; yn = yn1; un = un1; xn2 = xn21; v2 = v21; u2 = u21; yn2 = yn21;
